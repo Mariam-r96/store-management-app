@@ -1,0 +1,28 @@
+
+.content-box{
+  
+    height: 100vh;
+    width: 100%;
+    margin-top: 5%;
+    padding: 0rem 2rem;
+ 
+
+}
+
+.searchBar{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header-class{
+   text-align: center;
+   /* display: flex;
+   flex-direction: column; */
+}
+
+.content-box hr{
+    height: 1px;
+    background-color: rgb(212, 212, 212);
+    border: none;
+    width: 80%;
+}

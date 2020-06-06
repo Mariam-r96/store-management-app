@@ -1,0 +1,17 @@
+.navbar_list a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.Navbar-form {
+  display: flex;
+}
+
+.Navbar-form > div {
+  width: 300px;
+}
+
+.searchBtn_custom {
+  max-width: 100px;
+  margin-left: 5px;
+}

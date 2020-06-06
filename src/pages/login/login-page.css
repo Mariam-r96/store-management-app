@@ -1,0 +1,139 @@
+.mainContent{
+height: 100vh;
+display: flex;
+
+}
+
+.userList{
+ 
+  background:linear-gradient(to bottom, rgba(195, 20, 50,.4), rgba(36, 11, 54,.4)), url(../../assets/img/lavender-2534898_960_720.jpg) ;
+  height: 100%;
+  width: 64%;
+  padding: 5rem 8rem 4rem 2rem;
+}
+
+.username_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: #f6f6f6e7;
+  border-radius: 7px;
+  border-color: #ddd;
+  color: #333;
+  height:4.5rem;
+  border-bottom-width: 1px; 
+  cursor: pointer;
+  list-style: none;
+
+}
+
+.username_list h4{
+  margin-left: -10rem;
+}
+
+.username_list:hover{
+  background-color: #eeeeee;
+}
+
+.user_img{
+  
+  width: 5rem;
+  height: 4.5rem;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.user-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.loginForm{
+  background: rgb(39, 4, 17);
+  height: 100%;
+  width: 36%;
+  color: whitesmoke;
+  padding: 0rem 4.5rem;
+ 
+}
+
+.form-container{
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 3rem 2rem;
+  height: auto;
+  background: rgba(252, 252, 252, 0.911);
+  border-radius: 7px;
+  color:rgb(83, 10, 22); ;
+  
+}
+
+.form-container .heading{
+margin-bottom: 26px;
+text-align: center;
+}
+
+.form-container .loginBtn{
+  margin: 0 auto;
+  margin-top: 9px;
+  padding: 5px 0px;
+  /* background: rgb(247, 247, 247); */
+  background: none;
+  border: 2px solid rgb(83, 10, 22);
+  width: 7rem;
+  border-radius: 20px;
+  cursor: pointer;
+  color: rgb(83, 10, 22);
+  font-weight: 500;
+}
+
+.loginBtn:hover{
+  background: rgb(83, 10, 22);
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+.form-container input{
+  padding: 10px 0;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid rgb(83, 10, 22);
+  
+}
+
+.form-container input.error {
+  border-color:  rgb(238, 41, 41);
+}
+
+.form-container .input-feedback {
+  color: rgb(238, 41, 41);
+  margin-top: -10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.form-container input:-webkit-autofill,
+.form-container input:-webkit-autofill:hover, 
+.form-container input:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgb(83, 10, 22);;
+  -webkit-box-shadow: 0 0 0px 1000px #fcfcfc00 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-container form label{
+  text-align: left;
+  margin: 0;
+  color:rgb(83, 10, 22);
+  pointer-events: none;
+  
+}

@@ -1,0 +1,9 @@
+.MainLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.MainLayout .main-content {
+  flex-grow: 1;
+}

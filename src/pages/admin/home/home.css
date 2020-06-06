@@ -1,0 +1,56 @@
+.Icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.Icon-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 7rem;
+    height: 9rem;
+    border: 1px solid #f7a883;
+    margin: 6rem 3rem;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.Icon-card:hover{
+    border: 1px solid #f5a17a;
+   background:rgb(235, 235, 235);
+}
+
+.Icon-image{
+    width: 7rem;
+    height: 7rem;
+    padding: 6px;
+}
+
+.Icon-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Icon-card p{
+    background: #f7a883;
+    margin: 0 auto;
+    width: 7rem;
+    color: white;
+    padding: 2px;
+    font-size: 0.9rem;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+
+.Icon-card p:hover{
+    background: #f5a17a;
+ 
+}
+
+.Popup{
+    height: 5rem;
+}
