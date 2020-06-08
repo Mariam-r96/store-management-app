@@ -11,7 +11,7 @@ const AdminPanel=()=>{
     <div>
      <Navbar/>
         <div className="Icon-container">
-        <Link  to="/addEdit" style={{textDecoration:"none"}}>
+        <Link  to="/sellerData" style={{textDecoration:"none"}}>
         <div className="Icon-card">
             <div className="Icon-image">
                 <img src={Seller} alt=""/>

@@ -8,8 +8,7 @@ import SellPage from "./pages/sell/sell-page";
 import Report from "./pages/report/report-page";
 import NavBar from "./components/navbar";
 import AdminPanel from './pages/admin/home/home';
-import Modal from './pages/admin/home/popupWindow';
-import AddEdit from './pages/admin/home/addEdit';
+import SellerData from './pages/admin/sellers/SellerDataPage';
 
 const App = () => {
   // ===============================
@@ -48,9 +47,9 @@ const App = () => {
           <NavBar hello={hello} changeHello={changeHello} />
           <AdminPanel />
         </Route>
-        <Route path="/addEdit" onClick={() => changeBgColor("#FFFFFF")} exact>
+        <Route path="/sellerData" onClick={() => changeBgColor("#FFFFFF")} exact>
           <NavBar hello={hello} changeHello={changeHello} />
-          <AddEdit />
+          <SellerData />
         </Route>
         
         <Route path="/sellerHome" onClick={() => changeBgColor("#FFFFFF")} exact>
