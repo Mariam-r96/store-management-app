@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React from 'react';
 import Navbar from '../../../components/adminNavbar';
 import './SellerDataPage.css';
 import BootstrapTable from 'react-bootstrap-table-next';
