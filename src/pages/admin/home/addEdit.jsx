@@ -17,6 +17,7 @@ const AddEdit=()=>{
   const columns = [{
     dataField: 'index',
     text: 'Sl. No',
+    searchable: false
     // sort: true
   }, {
     dataField: 'name',
@@ -76,10 +77,11 @@ const AddEdit=()=>{
             {
               props => (
                 <div>
-                  <h3>Input something at below input field:</h3>
+                  <h6>Input seller details for search :</h6>
                   <SearchBar className="searchBar" { ...props.searchProps }
-                  style={{margin:"0 auto" ,width:"100%"}}/>
-                  <hr/>
+              
+                  placeholder="Search using name or id"/>
+                  {/* <hr/> */}
                   <BootstrapTable
                     { ...props.baseProps }
                     headerClasses="header-class" 
