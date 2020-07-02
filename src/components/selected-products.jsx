@@ -1,5 +1,9 @@
 import React from "react";
+import "./styles/selectedProduct.css";
 import { Form,Button, FormControl } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+
 
 const SelectedProducts = props => {
   return (
@@ -8,7 +12,7 @@ const SelectedProducts = props => {
         props.product.length > 0 &&
         props.product.map(function(item, index) {
           return (
-            <li>
+            <li className="selected-item">
               <div className="item" key={item.id} value={item}>
                 {item.name}
               </div>
@@ -51,6 +55,12 @@ const SelectedProducts = props => {
                   </Button>
                 </span>
               </div>
+              <FontAwesomeIcon icon={faTrash} 
+              className="remove-icon" 
+              onClick={() => {
+                props.removeItem(index);
+              }}
+              />
             </li>
           );
         })}

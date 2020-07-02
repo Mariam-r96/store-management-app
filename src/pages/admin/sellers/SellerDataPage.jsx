@@ -6,6 +6,7 @@ import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 
 const SellerData=()=>{
 
@@ -23,19 +24,16 @@ const SellerData=()=>{
   }, {
     dataField: 'name',
     text: 'Seller Name',
-    // filter: textFilter(),
     sort: true
 
   }, {
   
     dataField: 'id',
     text: 'Seller ID',
-    // filter: textFilter(),
     sort: true
   }, {
     dataField: 'email',
     text: 'Email',
-    // sort: true
   }];
 
   const sellers= [{
@@ -44,7 +42,7 @@ const SellerData=()=>{
     id: 1010101,
     email: "kaka@gmail.com"
   },{
-    index:2,
+    index: 2,
     name: "ramu",
     id: 1016501,
     email: "ramu@gmail.com"
@@ -69,9 +67,7 @@ const SellerData=()=>{
         <div className="content-box">
           <h1>Seller Data</h1>
           <ToolkitProvider
-            keyField={sellers.map(function(index){
-              return(`${index}`);
-            })}
+            keyField="index"
             data={ sellers }
             columns={ columns }
             search={ { afterSearch }}
@@ -85,10 +81,15 @@ const SellerData=()=>{
                     <SearchBar className="searchBar" { ...props.searchProps }
                     placeholder="Search using name or id"/>
                   </div>
+
                   <div className="button-section">
+
+                  <Link  to="/addSeller" style={{textDecoration:"none"}}>
                     <div className="addBtn">ADD
                       <FontAwesomeIcon icon={faPlus} />
                     </div>
+                  </Link>
+                  
                     <div className="editBtn">EDIT
                       <FontAwesomeIcon icon={faEdit} />
                     </div>

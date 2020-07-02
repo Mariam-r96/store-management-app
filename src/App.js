@@ -9,6 +9,7 @@ import Report from "./pages/report/report-page";
 import NavBar from "./components/navbar";
 import AdminPanel from './pages/admin/home/home';
 import SellerData from './pages/admin/sellers/SellerDataPage';
+import AddSeller from './pages/admin/sellers/addSeller'
 
 const App = () => {
   // ===============================
@@ -34,10 +35,6 @@ const App = () => {
 
   return (
     <MainLayout style={{ background: color }}>
-      {/* <AdminPanel/> */}
-      {/* <AddEdit/> */}
-    
-
       <Switch>
         <Route path="/" exact style={{ backgroundColor: "#FF0000" }}>
           <LoginPage />
@@ -50,6 +47,10 @@ const App = () => {
         <Route path="/sellerData" onClick={() => changeBgColor("#FFFFFF")} exact>
           <NavBar hello={hello} changeHello={changeHello} />
           <SellerData />
+        </Route>
+        <Route path="/addSeller" onClick={() => changeBgColor("#FFFFFF")} exact>
+          <NavBar hello={hello} changeHello={changeHello} />
+          <AddSeller />
         </Route>
         
         <Route path="/sellerHome" onClick={() => changeBgColor("#FFFFFF")} exact>

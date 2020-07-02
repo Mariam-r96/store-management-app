@@ -10,21 +10,21 @@ import Toggle from "../../components/toggle";
 // import FiltreSearch from "../../components/filter-search-products";
 import Report from "../report/report-page";
 import SelectedProducts from "../../components/selected-products";
-import NavBar from "../../components/navbar";
+// import NavBar from "../../components/navbar";
 
 const SellPage = (props) => {
-  const [addClass, setaddClass] = useState(false);
+  // const [addClass, setaddClass] = useState(false);
 
-  const hoverOn = (e) => {
-    setaddClass(true);
-    // e.target.style.backgroundColor = "rgb(4, 48, 48)";
-    e.target.style.backgroundColor = "rgb(10, 109, 109)";
-  };
+  // const hoverOn = (e) => {
+  //   setaddClass(true);
+  //   // e.target.style.backgroundColor = "rgb(4, 48, 48)";
+  //   e.target.style.backgroundColor = "rgb(10, 109, 109)";
+  // };
 
-  const hoverOff = (e) => {
-    setaddClass(false);
-    e.target.style.backgroundColor = "";
-  };
+  // const hoverOff = (e) => {
+  //   setaddClass(false);
+  //   e.target.style.backgroundColor = "";
+  // };
 
   const products = [
     {
@@ -71,6 +71,22 @@ const SellPage = (props) => {
     newProduct[index].quantity = newProduct[index].quantity - 1;
     setProduct(newProduct);
   };
+
+  const removeItem = (index) =>{
+
+    const removed_item = product.filter(
+      (item)=> item.name === product[index].name
+    );
+
+    const undeleted_product_list =product.filter(
+      (item)=> item.name !== product[index].name
+    );
+
+    if(removed_item){
+      setProduct([...undeleted_product_list]);
+    }
+  
+  }
 
   const [product, setProduct] = useState([]);
 
@@ -214,6 +230,7 @@ const SellPage = (props) => {
                   product={product}
                   incrementBtn={incrementBtn}
                   decrementBtn={decrementBtn}
+                  removeItem={removeItem}
                 />
               </ul>
             </div>
