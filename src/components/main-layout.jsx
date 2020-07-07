@@ -1,14 +1,14 @@
 import React from "react";
-// import NavBar from "./navbar";
+import NavBar from "./navbar";
 import Footer from "./footer";
 import "./styles/main-layout.css";
 
 const MainLayout = (props) => {
   return (
     <div className="MainLayout">
-      {/* <NavBar /> */}
+      <NavBar />
       <main className="main-content">{props.children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
