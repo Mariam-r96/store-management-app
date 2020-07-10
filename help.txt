@@ -1,1 +1,3 @@
 $ npm install axios --save
+$ npm i react-bootstrap-table2-toolkit
+$ npm i generate-password
