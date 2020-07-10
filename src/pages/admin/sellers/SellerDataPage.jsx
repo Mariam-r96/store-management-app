@@ -84,15 +84,18 @@ const SellerData=()=>{
 
                   <div className="button-section">
 
-                  <Link  to="/addSeller" style={{textDecoration:"none"}}>
-                    <div className="addBtn">ADD
-                      <FontAwesomeIcon icon={faPlus} />
-                    </div>
-                  </Link>
-                  
-                    <div className="editBtn">EDIT
-                      <FontAwesomeIcon icon={faEdit} />
-                    </div>
+                    <Link  to="/addSeller" style={{textDecoration:"none"}}>
+                      <div className="addBtn">ADD
+                        <FontAwesomeIcon icon={faPlus} />
+                      </div>
+                    </Link>
+
+                    <Link  to="/editSeller" style={{textDecoration:"none"}}>
+                      <div className="editBtn">EDIT
+                        <FontAwesomeIcon icon={faEdit} />
+                      </div>
+                    </Link>
+
                   </div>
                   <BootstrapTable
                     { ...props.baseProps }

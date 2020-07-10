@@ -11,6 +11,15 @@ const AddSeller =()=>{
     const [isActive,setActive]= useState(false);
     const [fileChosen, setFileChosen]= useState("No file chosen...");
 
+    var generator = require('generate-password');
+
+    var auto_password = generator.generate({
+      length: 4,
+      numbers: true,
+      lowercase: true,
+      uppercase: true
+    });
+
     const formik = useFormik({
         initialValues: {
             name : "",
@@ -126,7 +135,7 @@ const AddSeller =()=>{
                         <input type="text" 
                         name="password"
                         onChange={formik.handleChange}
-                        value={formik.values.password}
+                        value={formik.values.password = auto_password}
                         onBlur={formik.handleBlur}/>
                            {formik.touched.email && formik.errors.email ? (
                                 <div className="error">{formik.errors.email}</div>

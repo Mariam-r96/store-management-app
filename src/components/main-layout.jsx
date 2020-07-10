@@ -6,7 +6,7 @@ import "./styles/main-layout.css";
 const MainLayout = (props) => {
   return (
     <div className="MainLayout">
-      <NavBar />
+      {/* <NavBar /> */}
       <main className="main-content">{props.children}</main>
       {/* <Footer /> */}
     </div>
