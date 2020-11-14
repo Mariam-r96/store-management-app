@@ -9,6 +9,7 @@ git clone [repository url]
 
 //Step 2:
 cd [local repository]
+
 //Step 3:
 //Check package.json file and ensure scripts are notated as below:
 
