@@ -1,0 +1,133 @@
+.edit-section{
+ 
+    width: 60%;
+    height: auto;
+    background-color: rgb(12, 110, 134);
+   border-radius: 6px;
+    margin: 6rem auto 4rem auto;
+    padding: 3rem 2rem;
+    box-shadow: 0px 8px 10px 0px #777575;
+    
+}
+
+.edit-section .search-container{
+    text-align: center;
+}
+
+.edit-section .search-container input{
+    width: 60%;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.edit-form{
+    margin-top: 2rem;
+}
+
+.edit-form label{
+    display: inline-block;
+  width: 128px;
+  text-align: right;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.edit-form input{
+    width: 70%;
+    border: none;
+    outline: none;
+    
+}
+.edit-form input ::placeholder{
+   color: rgb(46, 46, 46);
+    
+}
+
+#email_pass input{
+    width: 28%;
+}
+
+#signUp_form textarea{
+    vertical-align: top;
+    margin-bottom: 2rem;
+}
+
+
+.file-upload
+{
+    display:block;
+    text-align:center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.file-upload .file-select{
+ display:block;
+  border: 2px solid #dce4ec;
+ color:#34495e;
+  cursor:pointer;
+  height:40px;
+  line-height:40px;
+  text-align:left;
+  background:#FFFFFF;
+  overflow:hidden;
+  position:relative;
+  width: 50%;
+  margin:0 auto;
+  margin-top: 1rem;
+}
+.file-upload .file-select .file-select-button{
+ background:#cdd5dd;
+  padding:0 10px;
+  display:inline-block;
+  height:40px;
+  line-height:40px;
+}
+.file-upload .file-select .file-select-name{line-height:40px;display:inline-block;padding:0 10px;}
+.file-upload .file-select:hover{border-color:#34495e;transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
+.file-upload .file-select:hover .file-select-button{background:#34495e;color:#FFFFFF;transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
+.file-upload.active .file-select{border-color:#3fa46a;transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
+.file-upload.active .file-select .file-select-button{background:#3fa46a;color:#FFFFFF;transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
+.file-upload .file-select input[type=file]{z-index:100;cursor:pointer;position:absolute;height:100%;width:100%;top:0;left:0;opacity:0;filter:alpha(opacity=0);}
+.file-upload .file-select.file-select-disabled{opacity:0.65;}
+.file-upload .file-select.file-select-disabled:hover{cursor:default;display:block;border: 2px solid #dce4ec;color: #34495e;cursor:pointer;height:40px;line-height:40px;margin-top:5px;text-align:left;background:#FFFFFF;overflow:hidden;position:relative;}
+.file-upload .file-select.file-select-disabled:hover .file-select-button{background:#dce4ec;color:#666666;padding:0 10px;display:inline-block;height:40px;line-height:40px;}
+.file-upload .file-select.file-select-disabled:hover .file-select-name{line-height:40px;display:inline-block;padding:0 10px;}
+
+#signUp_form .submit_btn button{
+    margin: 0 auto;
+    border: none;
+    background: #ececec;
+    color: #00b128;
+    padding: .5rem 2rem;
+    outline: none;
+    cursor: pointer;
+    
+}
+#signUp_form .submit_btn button:hover{
+
+    background: #292929;
+    color: #00b128;
+    transition: all .3s ease-out;
+    
+}
+
+#signUp_form .submit_btn {
+text-align: center;
+margin-top: 2rem;
+}
+
+#signUp_form .error{
+    color: #ff8d00;
+    margin-left: 9rem;
+    margin-top: -1.5rem;
+}
+
+#signUp_form .passwordError{
+
+    margin-left: 31rem;
+  
+}
