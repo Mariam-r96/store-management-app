@@ -7,7 +7,7 @@ import LoginPage from "./pages/login/login-page";
 import SellPage from "./pages/sell/sell-page";
 import Report from "./pages/report/report-page";
 import NavBar from "./components/navbar";
-// import adminNavbar from "./components/adminNavbar";
+import AdminNavbar from "./components/adminNavbar";
 import AdminPanel from './pages/admin/home/home';
 import SellerData from './pages/admin/sellers/SellerDataPage';
 import AddSeller from './pages/admin/sellers/addSeller'
@@ -43,19 +43,22 @@ const App = () => {
         </Route>
 
         <Route path="/adminHome" onClick={() => changeBgColor("#FFFFFF")} exact>
-          <NavBar hello={hello} changeHello={changeHello} />
+          <AdminNavbar hello={hello} changeHello={changeHello} />
           <AdminPanel />
         </Route>
+        
         <Route path="/sellerData" onClick={() => changeBgColor("#FFFFFF")} exact>
-          <NavBar hello={hello} changeHello={changeHello} />
+          <AdminNavbar hello={hello} changeHello={changeHello} />
           <SellerData />
         </Route>
+
         <Route path="/addSeller" onClick={() => changeBgColor("#FFFFFF")} exact>
-          <NavBar hello={hello} changeHello={changeHello} />
+          <AdminNavbar hello={hello} changeHello={changeHello} />
           <AddSeller />
         </Route>
+
         <Route path="/editSeller" onClick={() => changeBgColor("#FFFFFF")} exact>
-          <NavBar hello={hello} changeHello={changeHello} />
+          <AdminNavbar hello={hello} changeHello={changeHello} />
           <EditSeller />
         </Route>
         

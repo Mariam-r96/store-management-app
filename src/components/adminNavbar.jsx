@@ -3,7 +3,7 @@ import { Navbar, Nav, Button, Form, FormControl } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./styles/navbar.css";
 
-const NavBar = (props) => {
+const AdminNavBar = (props) => {
   const navStyle = {
     color: "white",
     textDecoration: "none",
@@ -45,4 +45,4 @@ const NavBar = (props) => {
   );
 };
 
-export default NavBar;
+export default AdminNavBar;

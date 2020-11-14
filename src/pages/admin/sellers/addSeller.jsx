@@ -54,10 +54,10 @@ const AddSeller =()=>{
 
           axios.post(`https://jsonplaceholder.typicode.com/posts`,values)
           .then(response=>{
-            console.log(response)
+            console.log(response);
           })
           .catch(error=>{
-            console.log(error)
+            console.log(error);
           })
         },
 

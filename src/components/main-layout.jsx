@@ -8,7 +8,7 @@ const MainLayout = (props) => {
     <div className="MainLayout">
       {/* <NavBar /> */}
       <main className="main-content">{props.children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
